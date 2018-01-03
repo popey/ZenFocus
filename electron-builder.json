@@ -40,9 +40,19 @@
     "perMachine": false
   },
   "linux": {
+    "icon": "resources/icons/linux",
     "target": [
+      "snap",
       "deb",
       "AppImage"
+    ]
+  },
+  "snap": {
+    "plugs": [
+      "default"
+    ],
+    "after": [
+      "desktop-gtk2"
     ]
   },
   "directories": {
